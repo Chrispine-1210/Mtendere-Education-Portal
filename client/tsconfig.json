@@ -1,0 +1,22 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@shared/*": [
+                "../shared/*"
+            ],
+            "@assets/*": [
+                "../attached_assets/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
